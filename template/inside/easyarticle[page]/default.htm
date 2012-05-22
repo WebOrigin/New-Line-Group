@@ -1,0 +1,23 @@
+﻿<link href="inside/easyarticle[page]/style.css" rel="stylesheet" type="text/css" />
+
+<h1>{WebOrigin:title/}</h1>
+<div id="artinfo">
+	<span>[{WebOrigin:sitename/}]</span>
+	<span>[{WebOrigin:from/}]</span>
+	<span>[{WebOrigin:date mode="yyyy-MM-dd"/}]</span>
+</div>
+
+<div id="artcontent">{WebOrigin:content/}</div>
+{WebOrigin:pagelist/}
+
+<div><strong>New Article</strong>
+{WebOrigin:easyarticle  type="new"}
+<p><a href="(WebOrigin:path/)">(WebOrigin:title/)</a></p>
+{/WebOrigin}
+</div>
+
+<div><strong>More About</strong>
+{WebOrigin:easyarticle type="related"}
+<p><a href="(WebOrigin:path/)">(WebOrigin:title/)</a></p>
+{/WebOrigin}
+</div>
